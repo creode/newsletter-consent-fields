@@ -1,0 +1,124 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "40e6d17d8016c8b1c102d357d47a7509",
+    "packages": [
+        {
+            "name": "creode/marketing-signup",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab+deploy-token-74:qL7KXgRKhJzrvsKkBuUm@gitlab.creode.co.uk/creode/libraries/marketing-signup.git",
+                "reference": "fd1ee1e3558cdd82aee4ec50e33f3a53f7920c17"
+            },
+            "dist": {
+                "type": "tar",
+                "url": "https://packagist.creode.co.uk/dist/creode/marketing-signup/creode-marketing-signup-1.0.0-b39c60.tar",
+                "reference": "fd1ee1e3558cdd82aee4ec50e33f3a53f7920c17",
+                "shasum": "24ebf932e716e259aa76a8197639b1b2e7bf1fbf"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Creode\\MarketingSignup\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Jamie Sykes",
+                    "email": "jamie.sykes@creode.co.uk"
+                }
+            ],
+            "description": "Library which provides a basic interface for marketing signup integrations.",
+            "time": "2020-06-17T10:16:55+00:00"
+        },
+        {
+            "name": "creode/marketing-signup-mailchimp",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab+deploy-token-75:xEFYYBy5fxTTWDus33Rt@gitlab.creode.co.uk/creode/libraries/marketing-signup-mailchimp.git",
+                "reference": "36838403619769b80d03ce90038c1579d0ff4de4"
+            },
+            "dist": {
+                "type": "tar",
+                "url": "https://packagist.creode.co.uk/dist/creode/marketing-signup-mailchimp/creode-marketing-signup-mailchimp-1.0.0-80aacb.tar",
+                "reference": "36838403619769b80d03ce90038c1579d0ff4de4",
+                "shasum": "de2b7418f24928cdbcedcc252c1294367dbb520b"
+            },
+            "require": {
+                "creode/marketing-signup": "^1.0",
+                "drewm/mailchimp-api": "^2.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Creode\\MarketingSignupMailchimp\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Jamie Sykes",
+                    "email": "jamie.sykes@creode.co.uk"
+                }
+            ],
+            "description": "Library which uses the creode marketing signup interfaces to create mailchimp specific integration.",
+            "time": "2020-06-17T10:19:01+00:00"
+        },
+        {
+            "name": "drewm/mailchimp-api",
+            "version": "v2.5.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drewm/mailchimp-api.git",
+                "reference": "c6cdfab4ca6ddbc3b260913470bd0a4a5cb84c7a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/drewm/mailchimp-api/zipball/c6cdfab4ca6ddbc3b260913470bd0a4a5cb84c7a",
+                "reference": "c6cdfab4ca6ddbc3b260913470bd0a4a5cb84c7a",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "7.0.*",
+                "vlucas/phpdotenv": "^2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DrewM\\MailChimp\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Drew McLellan",
+                    "email": "drew.mclellan@gmail.com",
+                    "homepage": "http://allinthehead.com/"
+                }
+            ],
+            "description": "Super-simple, minimum abstraction MailChimp API v3 wrapper",
+            "homepage": "https://github.com/drewm/mailchimp-api",
+            "time": "2019-08-06T09:24:58+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
