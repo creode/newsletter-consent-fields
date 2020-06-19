@@ -1,6 +1,6 @@
 {
     "name": "creode/newsletter-consent-fields",
-    "description": "Provides functionality to replace the Mailchimp for WooCommerce plugin.",
+    "description": "Provides functionality to add newsletter fields to various WooCommerce based forms.",
     "type": "wordpress-plugin",
     "license": "proprietary",
     "authors": [
