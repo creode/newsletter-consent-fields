@@ -8,7 +8,7 @@ This plugin exposes the following filters which can be used throughout WordPress
 
 * `newsletter_consent_field_checkbox_copy` - Allows someone to change the copy of the consent checkbox.
 
-## Exposed Actions
+## Exposed actions
 
 This plugin exposes the following actions:
 
