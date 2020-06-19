@@ -24,10 +24,3 @@ We are using the following actions for this plugin:
 * `woocommerce_after_checkout_billing_form` - Used to add the marketing consent checkbox underneath the billing information on the site.
 * `woocommerce_register_post` - Used to fire off a function when the user posts registration data to check newsletter.
 * `woocommerce_checkout_order_processed` - Used to fire off a function when the order is processed so we can see if to subscribe them to the newsletter.
-
-
-## Dependencies
-
-This plugin depends on the following libraries:
-
-* `creode/marketing-signup-mailchimp` - This is used to subscribe people to the newsletter.
