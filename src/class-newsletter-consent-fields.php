@@ -1,4 +1,12 @@
 <?php
+/**
+ * Plugin Name: Newsletter Consent Fields
+ * Plugin URI: https://www.creode.co.uk
+ * Description: This plugin exposes an opt-in form to the registration and checkout forms to collect a customers newsletter consent.
+ * Author: Creode
+ *
+ * @package Newsletter_Consent_Fields
+ */
 
 /**
  * Main Consent fields class.
@@ -80,6 +88,8 @@ class Newsletter_Consent_Fields {
 	 * @param string $newsletter_source Section of the website where the user checked the consent form.
 	 */
 	public function handle_newsletter_submission( $email_address, $newsletter_source ) {
+		// Ignore PHPCS as this is handled by the woocommerce_register_post action.
+		// phpcs:ignore WordPress.Security.NonceVerification.Missing
 		$subscription_status = isset( $_POST[ $this->post_key ] ) ? (int) $_POST[ $this->post_key ] : 0;
 		do_action( 'newsletter_consent_fields_handle_submission', $subscription_status, $email_address, $newsletter_source );
 	}
