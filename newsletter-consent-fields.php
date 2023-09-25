@@ -10,9 +10,10 @@
  * License: GPL2+
  * License URI: https://www.gnu.org/licenses/gpl-2.0.txt
  *
- * @package CGB
+ * @package Newsletter_Consent_Fields
  */
 
 require_once WP_PLUGIN_DIR . '/newsletter-consent-fields/src/class-newsletter-consent-fields.php';
+require_once WP_PLUGIN_DIR . '/newsletter-consent-fields/src/class-newsletter-consent-renderer.php';
 
 new Newsletter_Consent_Fields();
