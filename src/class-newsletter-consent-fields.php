@@ -41,11 +41,7 @@ class Newsletter_Consent_Fields {
 	 * Adds checkbox field to certain areas of the site.
 	 */
 	public function add_newsletter_checkbox_field() {
-		$default  = 'I agree to receive occasional updates from ' . get_bloginfo( 'name' ) . ' in line with the <a href="/privacy-policy" target="_blank">Privacy Policy.</a>';
-		$copy     = apply_filters( 'newsletter_consent_field_checkbox_copy', $default );
-		$post_key = $this->post_key;
-
-		require __DIR__ . '/../templates/newsletter-consent-checkbox.php';
+		Newsletter_Consent_Renderer::render_consent_field( $this->post_key );
 	}
 
 	/**
