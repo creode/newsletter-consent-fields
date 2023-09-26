@@ -49,7 +49,7 @@ class Newsletter_Consent_Fields {
 	 *
 	 * @param array  $sanitized_user_login User login data.
 	 * @param string $user_email Email address of user.
-	 * @param array  $reg_errors Registration errors.
+	 * @param WPError  $reg_errors Registration errors.
 	 */
 	public function process_newsletter_submission_for_registration_form( $sanitized_user_login, $user_email, $reg_errors ) {
 		if ( defined( 'WOOCOMMERCE_CHECKOUT' ) ) {
