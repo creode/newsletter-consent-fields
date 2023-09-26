@@ -56,8 +56,12 @@ class Newsletter_Consent_Fields {
 			return; // Ship checkout.
 		}
 
-		$newsletter_source = apply_filters( 'newsletter_consent_field_set_user_registration_source', 'User Registration' );
+		// If the form has errors we don't want to send it off.
+		if ( property_exists( $reg_errors, 'errors' ) && ! empty( $reg_errors->errors ) ) {
+			return;
+		}
 
+		$newsletter_source = apply_filters( 'newsletter_consent_field_set_user_registration_source', 'User Registration' );
 		$this->handle_newsletter_submission( $user_email, $newsletter_source );
 	}
 
