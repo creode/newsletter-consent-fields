@@ -18,8 +18,11 @@ class Newsletter_Consent_Renderer {
 	 * @param string $post_key The key to use for the form field.
 	 */
 	public static function render_consent_field( $post_key ) {
-		$default = 'I agree to receive occasional updates from ' . get_bloginfo( 'name' ) . ' in line with the <a href="/privacy-policy" target="_blank">Privacy Policy.</a>';
-		$copy    = apply_filters( 'newsletter_consent_field_checkbox_copy', $default );
+		$copy = 'I agree to receive occasional updates from ' . get_bloginfo( 'name' ) . ' in line with the <a href="/privacy-policy" target="_blank">Privacy Policy.</a>';
+
+		if ( get_option( 'options_newsletter_opt-in_text') ) {
+			$copy = get_option( 'options_newsletter_opt-in_text' );
+		}
 
 		require __DIR__ . '/../templates/newsletter-consent-checkbox.php';
 	}

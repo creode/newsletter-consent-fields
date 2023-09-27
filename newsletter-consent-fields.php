@@ -13,7 +13,11 @@
  * @package Newsletter_Consent_Fields
  */
 
+use plugins\newsletter_consent_fields\src\Site_Options;
+
 require_once WP_PLUGIN_DIR . '/newsletter-consent-fields/src/class-newsletter-consent-fields.php';
+require_once WP_PLUGIN_DIR . '/newsletter-consent-fields/src/class-site-options.php';
 require_once WP_PLUGIN_DIR . '/newsletter-consent-fields/src/class-newsletter-consent-renderer.php';
 
+new Site_Options();
 new Newsletter_Consent_Fields();
