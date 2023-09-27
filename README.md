@@ -2,12 +2,6 @@
 
 This plugin adds some newsletter signup fields at the bottom of the registration form and billing area on the checkout page.
 
-## Exposed filters
-
-This plugin exposes the following filters which can be used throughout WordPress:
-
-* `newsletter_consent_field_checkbox_copy` - Allows someone to change the copy of the consent checkbox.
-
 ## Exposed actions
 
 This plugin exposes the following actions:
