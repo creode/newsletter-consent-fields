@@ -26,6 +26,9 @@ $is_checked = isset( $_POST[ $post_key ] ) ? (bool) $_POST[ $post_key ] : false;
 				'br'     => array(),
 				'em'     => array(),
 				'strong' => array(),
+				'span'   => array(
+					'class' => array(),
+				),
 			)
 		);
 		?>
